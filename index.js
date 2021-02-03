@@ -9,9 +9,33 @@ function setCart(c) {
   return cart;
 }
 
+// function addToCart(item) {
+// // write your code here
+// newObj = {};
+ 
+// // item = newObj.itemName;
+// var thePrice = Math.floor(Math.random() * 100);
+// //   thePrice = newObj.price;
+// // cart.push(newObj);
+ 
+// newObj["itemName"] =cart.item;
+// newObj["itemPrice"] =cart.thePrice;
+// cart.push(obj);
+
+//   return cart;
+// }
+
+
 function addToCart(item) {
- // write your code here
-}
+ // write your code here	 
+ var price = Math.floor(Math.random() * 99 + 1);
+ var newItem = {[item]: price};
+ console.log(`${item} has been added to your cart.`);
+ cart.push(newItem);
+ return cart;
+}	
+
+
 
 function viewCart() {
   // write your code here
